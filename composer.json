@@ -1,0 +1,16 @@
+{
+  "authors": [
+    {
+      "name": "Tamás NAGY",
+      "email": "tamas.nagy0404@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpType\\": "src"
+    }
+  }
+}
