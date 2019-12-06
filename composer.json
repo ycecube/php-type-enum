@@ -1,4 +1,8 @@
 {
+  "name": "ycecube/php-type-enum",
+  "description": "Defines a base class for emulating enum types in php.",
+  "license": "MIT",
+  "keywords": ["enum", "php"],
   "authors": [
     {
       "name": "Tamás NAGY",
