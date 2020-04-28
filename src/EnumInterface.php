@@ -20,7 +20,7 @@ namespace PhpType {
         /**
          * Compares the current enum with a given one.
          *
-         * @param Enum $type
+         * @param EnumInterface $type
          *   An enum to compare the current one to.
          *
          * @return int
@@ -30,12 +30,12 @@ namespace PhpType {
          * @throws TypeMismatchException
          *   If the type of the current and provided enums are different.
          */
-        public function compareTo(Enum $type): int;
+        public function compareTo(EnumInterface $type): int;
 
         /**
          * Checks if the given enum equals with the current one.
          *
-         * @param Enum $enum
+         * @param EnumInterface $enum
          *   An enum to compare the current one to.
          *
          * @return bool
@@ -44,7 +44,7 @@ namespace PhpType {
          * @throws TypeMismatchException
          *   If the type of the current and provided enums are different.
          */
-        public function equals(Enum $enum): bool;
+        public function equals(EnumInterface $enum): bool;
 
         /**
          * Gets the value of the enum without typecasting.
@@ -53,5 +53,18 @@ namespace PhpType {
          *   The value with the original type.
          */
         public function getValue();
+
+        /**
+         * List the defined static method names (enums) with their values defined on the base class.
+         *
+         * @param bool $as_object
+         *   If true gather values as Enum objects, otherwise gather values by their actual value.
+         * @param string[] $ignore_enums
+         *   A list of enums (static method names) that should be ignored.
+         *
+         * @return EnumInterface[]
+         *   The list of enums.
+         */
+        public static function listValues(bool $as_object = true, array $ignore_enums = []): array;
     }
 }
