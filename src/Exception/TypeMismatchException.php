@@ -2,6 +2,9 @@
 
 namespace PhpType\Exception {
 
+    /**
+     * Defines a type mismatch exception.
+     */
     class TypeMismatchException extends RuntimeException
     {
     }
