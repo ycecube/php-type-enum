@@ -93,7 +93,7 @@ namespace PhpType {
         {
             $class = get_class($enum);
             if (static::class !== $class) {
-                throw new TypeMismatchException(strtr('The given object does not match with the current one.', [
+                throw new TypeMismatchException(strtr('The current object (:type_a) does not match with the given object (:type_b).', [
                     ':type_a' => static::class,
                     ':type_b' => $class,
                 ]));
