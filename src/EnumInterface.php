@@ -20,7 +20,7 @@ namespace PhpType {
         /**
          * Compares the current enum with a given one.
          *
-         * @param EnumInterface $type
+         * @param EnumInterface $enum
          *   An enum to compare the current one to.
          *
          * @return int
@@ -30,7 +30,7 @@ namespace PhpType {
          * @throws TypeMismatchException
          *   If the type of the current and provided enums are different.
          */
-        public function compareTo(EnumInterface $type): int;
+        public function compareTo(EnumInterface $enum): int;
 
         /**
          * Checks if the given enum equals with the current one.
