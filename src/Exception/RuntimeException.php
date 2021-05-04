@@ -5,7 +5,7 @@ namespace PhpType\Exception {
     /**
      * Defines a common exception specific to this library.
      */
-    class RuntimeException extends \Exception
+    class RuntimeException extends \RuntimeException
     {
     }
 }
